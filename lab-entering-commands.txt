@@ -18,6 +18,14 @@ Copy and paste the output of ls below.
 ----------
 Code  Desktop  Documents  Downloads  Movies  Music  Pictures  textfile.txt
 
+'3D Objects'/         Downloads/               NetHood@                                                                                       ntuser.ini      SendTo@     
+ AppData/             Favorites/               NTUSER.DAT                                                                                     OneDrive/      'Start Menu'@
+'Application Data'@   IntelGraphicsProfiles/   ntuser.dat.LOG1                                                                                Pictures/       Templates@  
+ Contacts/            Links/                   ntuser.dat.LOG2                                                                                PrintHood@      Videos/     
+ Cookies@            'Local Settings'@         NTUSER.DAT{ee866866-09f7-11ec-a3ed-86f3ee56da91}.TM.blf                                        Recent@
+ Desktop/             Music/                   NTUSER.DAT{ee866866-09f7-11ec-a3ed-86f3ee56da91}.TMContainer00000000000000000001.regtrans-ms  'Saved Games'/
+ Documents/          'My Documents'@           NTUSER.DAT{ee866866-09f7-11ec-a3ed-86f3ee56da91}.TMContainer00000000000000000002.regtrans-ms   Searches/
+
 
 ==========
 2a. Type: 
@@ -28,18 +36,45 @@ What happens?  Describe it below.
 ----------
 Desktop/    Documents/  Downloads/
 
-
+Directories beginning with D are listed.
 ==========
 2b. Press <TAB> one more time.  Copy and paste the output below.
 ----------
-rdrgeerwtger yg erwy brg
+.nbi/
+.vscode/
+3D Objects/
+AppData/
+Application Data/
+Contacts/
+Cookies/
+Desktop/
+Documents/
+Downloads/
+Favorites/
+IntelGraphicsProfiles/
+--More--
 
 
 ==========
 2c. Now press <ENTER>. Copy and paste the output below.
 ----------
 
-
+.nbi/
+.vscode/
+3D Objects/
+AppData/
+Application Data/
+Contacts/
+Cookies/
+Desktop/
+Documents/
+Downloads/
+Favorites/
+IntelGraphicsProfiles/
+Links/
+Local Settings/
+Music/
+--More--
 
 ==========
 3.  Type:
@@ -48,7 +83,8 @@ $ ls -l Documents<ENTER>
 
 Copy and paste the first *two lines* of output below.
 ----------
-
+total 1
+-rw-r--r-- 1 kacie 197609 402 Sep 12 23:43  desktop.ini
 
 
 ==========
@@ -58,6 +94,7 @@ $ ls -a Documents
 
 Copy and paste the first *two lines* of output below.
 ----------
+./   ../   desktop.ini  'My Music'@  'My Pictures'@  'My Videos'@
 
 
 
@@ -69,7 +106,7 @@ Copy and paste the first *two lines* of output below.
 What command was repeated?
 ----------
 
-
+ls -a Documents
 
 ==========
 6.  Type:
@@ -79,7 +116,7 @@ What command was repeated?
 What command was repeated?
 ----------
 
-
+ls -a Documents
 
 ==========
 7.  Type:
@@ -88,7 +125,7 @@ $ ls /b<TAB><ENTER>
 
 What is the result of pressing tab?
 ----------
-
+ls /bin/
 
 
 ==========
@@ -99,37 +136,38 @@ $ ls doesnotexist
 Copy and paste the output below.
 ----------
 
-
+ls: cannot access 'doesnotexist': No such file or directory
 
 ==========
 9.  What key do I press to go to the previous command?
 ----------
 
-
+<UP>
 
 ==========
 10.  Name two flags that we used in this exercise.
 ----------
 
-
+-a
+/b
 
 ==========
 11.  What key do I use to attempt to autocomplete a command or a file name?
 ----------
 
-
+<Right>
 
 ==========
 12.  What was the main command that we used throughout this exercise?
 ----------
 
-
+ls
 
 ==========
 13.  Name one argument that we passed to the command.
 ----------
 
-
+D
 
 ==========
 14.  Type:
@@ -139,7 +177,7 @@ $ foo<ENTER>
 Copy and paste the output below.
 ----------
 
-
+bash: foo: command not found
 
 ==========
 15.  Type:
@@ -149,7 +187,7 @@ Copy and paste the output below.
 Copy and paste the output below.
 ----------
 
-
+bash: foo: command not found
 
 ==========
 16.  In the following line....
@@ -158,3 +196,4 @@ $ ls -a Desktop
 
 What is the command, flag, argument, and prompt?
 ----------
+ls is the command -a is the flag Desktop is the arugument. There is no prompt.
